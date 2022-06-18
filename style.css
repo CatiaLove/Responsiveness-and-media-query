@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background: hsl(0, 100%, 74%) url("img/bg-intro-desktop.png") repeat;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 60%;
+    justify-content: center;
+    align-content: center;
+}
+main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 2.5rem;
+}
+main div:first-child {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-content: center;
+}
+main > div > h1, main > div > p {
+    color: #fff;
+}
+main > div > p {
+    font-size: small;
+    margin-top: 0;
+}
+button {
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0.7rem;
+    width: 100%;
+    font-size: small;
+}
+main > div > button {
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0px 5px 5px hsl(248, 32%, 49%, 0.7);
+    margin-bottom: 1.5rem;
+}
+main > div > button > span {
+    font-weight: 700;
+}
+main > div > form > div {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: start;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px hsl(0, 0%, 0%, 0.2);
+}
+input {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid #eee;
+    margin-bottom: 1rem;
+}
+
+.card-details button {
+    background-color: hsl(154, 59%, 51%);
+    font-weight: 600;
+}
+.card-details p {
+    text-align: center;
+    font-size: 0.7rem;
+}
+.card-details p span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+input:required {
+    background: #fff url("img/icon-error.svg") no-repeat 97% 50%;
+}
